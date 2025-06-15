@@ -24,7 +24,7 @@ Sistema de gerenciamento de viagens, com cadastro e login de usuários, criaçã
 
 3. **Executar:**
    ```sh
-   java -cp .;sqlite-jdbc-3.43.0.0.jar src/Main
+   java -cp "src;sqlite-jdbc-3.45.1.0.jar;slf4j-api-2.0.9.jar" Main
    ```
 
 4. **Banco de Dados:**
