@@ -8,6 +8,14 @@ import java.sql.Statement;
 public class Database {
     private static final String URL = "jdbc:sqlite:freerona.db";
 
+    static {
+        try {
+            Class.forName("org.sqlite.JDBC");
+        } catch (ClassNotFoundException e) {
+            System.out.println("Erro ao carregar o driver SQLite: " + e.getMessage());
+        }
+    }
+
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL);
     }
