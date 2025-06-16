@@ -24,12 +24,7 @@ public class Main {
         }
     }
 
-    private static void clearScreen() {
-        for (int i = 0; i < 100; i++) System.out.println();
-    }
-
     private static void menuInicial() {
-        clearScreen();
         System.out.println("\n--- FREERONA ---");
         System.out.println("1. Fazer Login");
         System.out.println("2. Criar Conta");
@@ -52,7 +47,6 @@ public class Main {
     }
 
     private static void menuUsuario() {
-        clearScreen();
         System.out.println("\n--- Menu do Usuário ---");
         System.out.println("1. Criar Viagem");
         System.out.println("2. Listar Viagens");
